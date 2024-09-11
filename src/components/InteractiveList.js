@@ -16,8 +16,6 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import FolderIcon from '@mui/icons-material/Folder';
 import DeleteIcon from '@mui/icons-material/Delete';
-import AddTodo from './AddTodo.js';
-import TaskList from './TaskList.js';
 
 function generate(element) {
     return [0, 1, 2].map((value) =>

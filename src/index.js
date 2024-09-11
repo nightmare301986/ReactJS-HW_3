@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 //import { MessagesList } from './components/MessageList';
 import { Button } from './components/Button';
-import InteractiveList from './components/InteractiveList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

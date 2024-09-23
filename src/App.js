@@ -40,18 +40,6 @@ export default function TaskApp() {
         ]);
     }
 
-    /*    function handleChangeTodo(nextTodo) {
-            setTodos(
-                todos.map((t) => {
-                    if (t.id === nextTodo.id) {
-                        return nextTodo;
-                    } else {
-                        return t;
-                    }
-                })
-            );
-        }
-    */
     function handleDeleteTodo(todoId) {
         setTodos(todos.filter((t) => t.id !== todoId));
     }
@@ -60,7 +48,6 @@ export default function TaskApp() {
             <AddTodo onAddTodo={handleAddTodo} />
             <TaskList
                 todos={todos}
-                //  onChangeTodo={handleChangeTodo}
                 onDeleteTodo={handleDeleteTodo}
             />
             <TextField
@@ -83,9 +70,6 @@ export default function TaskApp() {
                 }}
                 value={value1} onChange={handleChange2} onBlur={resetAll}
             />
-           
-  
         </>
     );
 }
-//https://reactdev.ru/reference/react/useState/#__tabbed_9_3 <p>result: {value1 + value2}</p>
